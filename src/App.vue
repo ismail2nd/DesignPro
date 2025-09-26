@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="min-h-screen bg-gray-50">
     <router-view />
   </div>
 </template>
@@ -9,3 +9,15 @@ export default {
   name: 'App'
 }
 </script>
+
+<style>
+/* Ensure proper spacing for fixed topbar */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+</style>
