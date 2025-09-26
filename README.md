@@ -1,5 +1,5 @@
 # DesignPro
-
+  vue, ionic 
 # Canva-like Editor README — Prompts 1–12 (Start at Prompt 1)
 
 > This document is organized so you can copy each prompt into Copilot/Augment to scaffold features step-by-step. Start with **Prompt 1 (Home Page)** to set up the entry screen.
