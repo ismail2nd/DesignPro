@@ -15,9 +15,14 @@
             <div class="text-center">
               <h1 class="text-4xl font-bold mb-4">Create Amazing Designs with DesignPro</h1>
               <p class="text-xl mb-8">Professional design tools for everyone</p>
-              <button @click="$router.push('/dashboard')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Start Designing
-              </button>
+              <div class="flex space-x-4">
+                <button @click="$router.push('/dashboard')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Start Designing
+                </button>
+                <button @click="$router.push('/gallery')" class="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+                  My Gallery
+                </button>
+              </div>
             </div>
           </div>
         </section>

@@ -4,9 +4,21 @@ import router from './router'
 import App from './App.vue'
 import './style.css'
 
-const app = createApp(App)
+// Import stores to initialize them
+import { useProjectsStore } from './stores/projects'
+import { useAssetsStore } from './stores/assets'
 
-app.use(createPinia())
+const app = createApp(App)
+const pinia = createPinia()
+
+app.use(pinia)
 app.use(router)
+
+// Initialize stores
+const projectsStore = useProjectsStore()
+const assetsStore = useAssetsStore()
+
+projectsStore.loadFromLocalStorage()
+assetsStore.loadFromLocalStorage()
 
 app.mount('#app')
